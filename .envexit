@@ -1,0 +1,4 @@
+BASE_URL=https://blog_group.local
+API_BASE_URL=https://blog_group.local/api/admin
+API_KEY=""
+IS_DEMO=0
