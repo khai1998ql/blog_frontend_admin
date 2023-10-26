@@ -93,7 +93,7 @@ const logout = async () => {
 
 const getProfile = async () => {
   const access_token = localStorage.getItem("authToken");
-  const profileResponse = await useFetch(`${apiBaseUrl}/me`, {
+  const profileResponse = await useFetch(`${apiBaseUrl}/profile`, {
     method: "GET",
     headers: {
       Authorization: `Bearer ${access_token}`,
