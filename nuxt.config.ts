@@ -49,12 +49,19 @@ export default defineNuxtConfig({
     "@/assets/css/nucleo-svg.css",
     "@/assets/css/nucleo-icons.css",
     "@/assets/scss/argon-dashboard.scss",
+    "@/assets/css/main.css",
   ],
-  modules: ["@pinia/nuxt"],
+  modules: ["@pinia/nuxt", "@element-plus/nuxt"],
   runtimeConfig: {
     public: {
       apiBaseUrl: process.env.API_BASE_URL,
       isDemo: process.env.IS_DEMO,
-    }
-  }
+    },
+  },
+  postcss: {
+    plugins: {
+      tailwindcss: {},
+      autoprefixer: {},
+    },
+  },
 });
